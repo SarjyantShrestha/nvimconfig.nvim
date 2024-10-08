@@ -1,7 +1,4 @@
 ### Install config
-
-Clone kickstart.nvim:
-
 <details><summary> Linux and Mac </summary>
 
 ```sh
