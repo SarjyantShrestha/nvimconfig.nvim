@@ -402,6 +402,8 @@ require('lazy').setup({
   require 'kickstart.plugins.vim-fugitive',
   require 'kickstart.plugins.nvim-lint',
   require 'kickstart.plugins.cord',
+  require 'kickstart.plugins.cord',
+  require 'kickstart.plugins.render-markdown',
   -- require 'kickstart.plugins.indent_line',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`.
