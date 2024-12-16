@@ -29,6 +29,9 @@ vim.schedule(function()
   vim.opt.clipboard = 'unnamedplus'
 end)
 
+vim.api.nvim_set_keymap('n', 'p', '"0p', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'P', '"0P', { noremap = true, silent = true })
+
 -- Enable break indent
 vim.opt.breakindent = true
 
@@ -362,15 +365,15 @@ require('lazy').setup({
   {
     'folke/tokyonight.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
-    init = function()
-      -- Load the colorscheme here.
-      -- Like many other themes, this one has different styles, and you could load
-      -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      -- vim.cmd.colorscheme 'tokyonight-night'
+    -- init = function()
+    -- Load the colorscheme here.
+    -- Like many other themes, this one has different styles, and you could load
+    -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
+    -- vim.cmd.colorscheme 'tokyonight-night'
 
-      -- You can configure highlights by doing something like:
-      -- vim.cmd.hi 'Comment gui=none'
-    end,
+    -- You can configure highlights by doing something like:
+    -- vim.cmd.hi 'Comment gui=none'
+    -- end,
   },
 
   -- Highlight todo, notes, etc in comments
@@ -404,6 +407,7 @@ require('lazy').setup({
   require 'kickstart.plugins.cord',
   require 'kickstart.plugins.cord',
   require 'kickstart.plugins.render-markdown',
+  require 'kickstart.plugins.dadbod',
   -- require 'kickstart.plugins.indent_line',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`.
